@@ -1,6 +1,6 @@
-# Template Method
+# Observer Methor
 
-This is an implementation of the software design pattern, "Template Method"
+This is an implementation of the software design pattern, "Observer Method"
 
 
 ## Installing the application
@@ -13,9 +13,10 @@ This is an implementation of the software design pattern, "Template Method"
     The application is divided within folders. Assignments and Simple Exercises.
     To run any of those execute the following commands on your terminal.
 
-    ruby -I . -w <table_generator_test.rb>
+    ruby -I . -w weather_test.rb
 
-    You can find all the code in the File: table_generator.rb
+    You can find all the code in the File: weather.rb
+    You can find the following assignment on the following website: http://webcem01.cem.itesm.mx:8005/apps/s201611/tc3049/activity_observer/
 
 Once the app has been loaded, you can access the functions within the program.
 

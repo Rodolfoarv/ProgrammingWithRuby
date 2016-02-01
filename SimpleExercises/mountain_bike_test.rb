@@ -2,6 +2,9 @@ require 'minitest/autorun' #Import unit test framework
 require 'mountain_bike' #Import file to be tested
 #ruby -I . -w mountain_bike_test.rb
 
+#-w allows us to activate all the warnings
+#-I makes us import the files in the same directory.
+
 
 class MountainBikeTest < Minitest::Test
   def test_mountain_bike_price
