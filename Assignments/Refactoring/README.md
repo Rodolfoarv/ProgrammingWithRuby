@@ -1,7 +1,7 @@
 # Refactoring
 
 This is a quick exercise of refactoring a class based on the book **Refactoring: Ruby Edition**
-by Jay Fields, Shane Harvie, Martin Fowler & Kent Beck ![Refactoring: Ruby Edition by Jay Fields, Shane Harvie, Martin Fowler and Kent Beck](http://martinfowler.com/books/refRuby.jpg)
+by Jay Fields, Shane Harvie, Martin Fowler & Kent Beck ![](http://martinfowler.com/books/refRuby.jpg)
 
 The following patterns are implemented in the following exercise:
 
