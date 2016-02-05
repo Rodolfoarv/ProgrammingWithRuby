@@ -1,4 +1,4 @@
-# Observer Methor
+# Observer Method
 
 This is an implementation of the software design pattern, "Observer Method"
 
