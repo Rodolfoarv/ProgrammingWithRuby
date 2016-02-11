@@ -2,6 +2,7 @@
 
 class Student
 
+
   attr_reader :name, :id
 
   def initialize(name, id, anual_income)
@@ -40,7 +41,7 @@ class Student
   end
 
   def scholarship_worthy?
-    # Nothing reasonable to do if this student has currently no grades. 
+    # Nothing reasonable to do if this student has currently no grades.
     return -1 if @grades.empty?
 
     # A student is worthy of a scholarship if he/she has good grades and

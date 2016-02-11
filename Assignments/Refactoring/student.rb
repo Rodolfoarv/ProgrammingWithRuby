@@ -33,7 +33,6 @@ class Student
   def scholarship_worthy?
     # Nothing reasonable to do if this student has currently no grades.
     return -1 if @grades.empty?
-
     good_grades = average >= GOOD_AVERAGE
     is_poor = @anual_income < MAX_POOR_ANUAL_INCOME
     good_grades and is_poor
