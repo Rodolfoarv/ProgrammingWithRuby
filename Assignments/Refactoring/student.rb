@@ -18,7 +18,7 @@ class Student
 
   attr_reader :name, :id
 
-  def initialize(name, id, anual_income)
+  def initialize(name: , id: , anual_income: 25_000 )
     @name = name
     @id = id
     @anual_income = anual_income

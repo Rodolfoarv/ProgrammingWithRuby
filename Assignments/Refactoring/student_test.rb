@@ -7,7 +7,7 @@ class StudentTest < Minitest::Test
     @out = StringIO.new
     @old_stdout = $stdout
     $stdout = @out
-    @s = Student.new("John", 123, 25_000)
+    @s = Student.new(name: "John", id: 123, anual_income: 25_000)
   end
 
   def teardown
@@ -47,7 +47,7 @@ class StudentTest < Minitest::Test
     @s.add_grade(100).add_grade(90)
     refute @s.scholarship_worthy?
 
-    other = Student.new('Mary', 299, 12_500)
+    other = Student.new(name: 'Mary',id: 299,anual_income: 12_500)
     other.add_grade(100).add_grade(90).add_grade(94)
     assert other.scholarship_worthy?
   end
