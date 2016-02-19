@@ -49,11 +49,7 @@ class Student
   private
 
   def average
-    sum = 0
-    @grades.each do |grade|
-      sum += grade
-    end
-    sum / @grades.size.to_f
+    @grades.reduce(:+) / @grades.size.to_f
   end
 
   def display_personal_information
