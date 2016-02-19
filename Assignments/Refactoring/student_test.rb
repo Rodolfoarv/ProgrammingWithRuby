@@ -19,9 +19,12 @@ class StudentTest < Minitest::Test
     assert_equal 123, @s.id
   end
 
-  def test_reset_anual_income
-    assert_equal 25_000, @s.reset_anual_income(30_000)
-    assert_equal 30_000, @s.reset_anual_income(40_000)
+  def test_anual_income_accessor
+    assert_equal 25_000, @s.anual_income
+    @s.anual_income = 30_000
+    assert_equal 30_000, @s.anual_income
+    @s.anual_income = 35_000
+    assert_equal 35_000, @s.anual_income
   end
 
   def test_add_grade

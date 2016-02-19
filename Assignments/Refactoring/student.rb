@@ -17,6 +17,7 @@ class Student
   MAX_POOR_ANUAL_INCOME = 15_000
 
   attr_reader :name, :id
+  attr_accessor :anual_income
 
   def initialize(name: , id: , anual_income: 25_000 )
     @name = name
@@ -25,11 +26,7 @@ class Student
     @grades = []
   end
 
-  def reset_anual_income(anual_income)
-    previous_anual_income = @anual_income
-    @anual_income = anual_income
-    previous_anual_income
-  end
+
 
   def add_grade(grade)
     @grades << grade
