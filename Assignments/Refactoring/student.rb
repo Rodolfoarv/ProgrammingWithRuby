@@ -1,5 +1,16 @@
 # File: student.rb
 
+# Replace Magic Number with Symbolic Constant
+# Rename Method
+# Split Temporary Variable
+# Extract Method
+# Hide Method
+# Introduce Explaining Variable
+# Replace Error Code with Exception
+# Introduce Named Parameter
+# Separate Query from Modifier
+# Replace Loop with Collection Closure Method
+
 class Student
 
   GOOD_AVERAGE = 85
@@ -32,7 +43,7 @@ class Student
 
   def scholarship_worthy?
     # Nothing reasonable to do if this student has currently no grades.
-    return -1 if @grades.empty?
+    raise 'Cannot check if scholarship worthy when grades are empty!' if @grades.empty?
     good_grades = average >= GOOD_AVERAGE
     is_poor = @anual_income < MAX_POOR_ANUAL_INCOME
     good_grades and is_poor

@@ -43,7 +43,7 @@ class StudentTest < Minitest::Test
   end
 
   def test_scholarship_worthy?
-    assert_equal(-1, @s.scholarship_worthy?)
+    assert_raises(RuntimeError) { @s.scholarship_worthy?}
     @s.add_grade(100).add_grade(90)
     refute @s.scholarship_worthy?
 
