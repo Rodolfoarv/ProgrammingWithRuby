@@ -71,12 +71,12 @@ class JakenponTest < Minitest::Test
   #   assert_equal Spock,    (Spock - Spock)
   # end
   #
-  # def test_dsl_1
-  #   #---------
-  #   show Spock
-  #   #---------
-  #   assert_equal "Result = Spock\n", @out.string
-  # end
+  def test_dsl_1
+    #---------
+    show Spock
+    #---------
+    assert_equal "Result = Spock\n", @out.string
+  end
 
   def test_dsl_2
     #------------------
